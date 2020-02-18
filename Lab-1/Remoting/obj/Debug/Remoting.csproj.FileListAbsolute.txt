@@ -1,0 +1,13 @@
+\\adir.hull.ac.uk\home\553\553592\Hull_Y3\T2_T1_600089 Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.csproj.CoreCompileInputs.cache
+\\adir.hull.ac.uk\home\553\553592\Hull_Y3\T2_T1_600089 Distributed Systems\Lab_1\Remoting\Remoting\bin\Debug\Remoting.exe.config
+\\adir.hull.ac.uk\home\553\553592\Hull_Y3\T2_T1_600089 Distributed Systems\Lab_1\Remoting\Remoting\bin\Debug\Remoting.exe
+\\adir.hull.ac.uk\home\553\553592\Hull_Y3\T2_T1_600089 Distributed Systems\Lab_1\Remoting\Remoting\bin\Debug\Remoting.pdb
+\\adir.hull.ac.uk\home\553\553592\Hull_Y3\T2_T1_600089 Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.exe
+\\adir.hull.ac.uk\home\553\553592\Hull_Y3\T2_T1_600089 Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.pdb
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\bin\Debug\Remoting.exe.config
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\bin\Debug\Remoting.exe
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\bin\Debug\Remoting.pdb
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.csprojAssemblyReference.cache
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.csproj.CoreCompileInputs.cache
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.exe
+C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.pdb
