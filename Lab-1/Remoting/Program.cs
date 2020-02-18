@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-
+using ClassLibrary1;
 
 namespace Remoting
 {
@@ -23,7 +23,7 @@ namespace Remoting
         }
     }
 
-    public class Translator : MarshalByRefObject
+    public class Translator : MarshalByRefObject, ITranslator
     {
 
         public string Translate(string in_str)
@@ -43,6 +43,15 @@ namespace Remoting
 
         }
 
+        public string GetStudent()
+        {
+            return "Daniel Wilde";
+        }
+
+        public string GetId()
+        {
+            return "2017andsomenumbers";
+        }
 
     }
 }

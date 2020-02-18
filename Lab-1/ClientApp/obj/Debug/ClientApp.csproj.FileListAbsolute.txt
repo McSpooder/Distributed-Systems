@@ -26,3 +26,19 @@ C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting
 C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\ClientApp\obj\Debug\ClientApp.csproj.CopyComplete
 C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\ClientApp\obj\Debug\ClientApp.exe
 C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\ClientApp\obj\Debug\ClientApp.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\ClientApp.exe.config
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\ClientApp.exe
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\ClientApp.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\ClassLibrary1.dll
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\Remoting.exe
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\ClassLibrary1.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\Remoting.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\bin\Debug\Remoting.exe.config
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.csprojAssemblyReference.cache
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.Form1.resources
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.Properties.Resources.resources
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.csproj.GenerateResource.cache
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.csproj.CoreCompileInputs.cache
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.csproj.CopyComplete
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.exe
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\ClientApp\obj\Debug\ClientApp.pdb

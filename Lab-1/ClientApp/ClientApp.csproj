@@ -81,6 +81,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{f2ae037d-92db-43a8-b0ad-0ddd2a3c02a0}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Remoting\Remoting.csproj">
       <Project>{351ec489-d6d5-4d8a-9bb6-8839cefb356d}</Project>
       <Name>Remoting</Name>

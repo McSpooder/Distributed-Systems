@@ -11,3 +11,13 @@ C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting
 C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.csproj.CoreCompileInputs.cache
 C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.exe
 C:\Users\Danny\Documents\Education\svn\Year 3\Distributed Systems\Lab_1\Remoting\Remoting\obj\Debug\Remoting.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\bin\Debug\Remoting.exe.config
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\bin\Debug\Remoting.exe
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\bin\Debug\Remoting.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\bin\Debug\ClassLibrary1.dll
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\bin\Debug\ClassLibrary1.pdb
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\obj\Debug\Remoting.csprojAssemblyReference.cache
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\obj\Debug\Remoting.csproj.CoreCompileInputs.cache
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\obj\Debug\Remoting.csproj.CopyComplete
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\obj\Debug\Remoting.exe
+C:\Users\Danny\Documents\Education\Hull_Y3\Distributed Systems\Distributed-Systems\Lab-1\Remoting\obj\Debug\Remoting.pdb

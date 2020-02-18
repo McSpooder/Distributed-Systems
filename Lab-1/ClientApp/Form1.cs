@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-using Remoting;
+using ClassLibrary1;
 
 
 namespace ClientApp
@@ -19,14 +19,14 @@ namespace ClientApp
     public partial class Form1 : Form
     {
 
-        Translator translator = null;
+        ITranslator translator = null;
 
         public Form1()
         {
             InitializeComponent();
             TcpChannel chan = new TcpChannel();
             ChannelServices.RegisterChannel(chan, false);
-            translator = (Translator)Activator.GetObject(typeof(Translator), "tcp://localhost:5000/translator");
+            translator = (ITranslator)Activator.GetObject(typeof(ITranslator), "tcp://localhost:5000/translator");
 
 
         }
