@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using Microsoft.AspNetCore.SignalR.Client;
+
+
+namespace WpfApp1
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        protected HubConnection connection;
+        public MainWindow()
+        {
+            InitializeComponent();
+            MessageTextBox.IsEnabled = false;
+            btnSend.IsEnabled = false;
+            //connection = new HubConnectionBuilder().WithUrl("http://150.237.201.206:5000/ChatHub").Build();
+            connection = new HubConnectionBuilder().WithUrl("http://localhost:51259/ChatHub").Build();
+            connection.On<string, string>("GetMessage",
+                new Action<string, string>((username, message) =>
+                GetMessage(username, message)));
+            
+        }
+
+        private void GetMessage(string username, string message)
+        {
+            this.Dispatcher.Invoke(() =>
+            {
+                var chat = $"{username}: {message}";
+                MessageListBox.Items.Add(chat);
+                
+            });
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                await connection.StartAsync();
+                MessageListBox.Items.Add("Connection opened");
+                UsernameTextBox.IsEnabled = false;
+                btnConnect.IsEnabled = false;
+                btnDisconnect.IsEnabled = true;
+                MessageTextBox.IsEnabled = true;
+                btnSend.IsEnabled = true;
+            }
+            catch
+            {
+                MessageListBox.Items.Add("Connection failed");
+            }
+        }
+
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                await connection.InvokeAsync("BroadcastMessage", UsernameTextBox.Text, MessageTextBox.Text);
+                MessageTextBox.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageListBox.Items.Add(ex.Message);
+            }
+        }
+
+        private void BtnDisconnect_Click(object sender, RoutedEventArgs e)
+        {
+            btnDisconnect.IsEnabled = false;
+            btnConnect.IsEnabled = true;
+            connection.StopAsync();
+            UsernameTextBox.IsEnabled = true;
+            MessageTextBox.IsEnabled = false;
+            btnSend.IsEnabled = false;
+        }
+
+        private void MessageTextBox_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageTextBox.Text = "";
+        }
+
+        private void MessageTextBox_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageTextBox.Text = "";
+        }
+
+        private void MessageTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            MessageTextBox.Text = "";
+        }
+    }
+}

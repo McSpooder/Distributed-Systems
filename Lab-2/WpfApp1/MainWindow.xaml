@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="281.745">
+    <Grid Margin="0,0,2,0">
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" Height="23" Margin="136,32,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnConnect" Content="Connect" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="40,81,0,0" Click="Button_Click"/>
+        <Button x:Name="btnSend" Content="Send" HorizontalAlignment="Left" Margin="210,311,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_1" Height="68"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="31,28,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox x:Name="MessageListBox" HorizontalAlignment="Left" Height="134" Margin="31,158,0,0" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="MessageTextBox" HorizontalAlignment="Left" Height="68" Margin="31,311,0,0" TextWrapping="Wrap" Text="Enter message." VerticalAlignment="Top" Width="174" MouseDown="MessageTextBox_MouseDown" MouseLeftButtonDown="MessageTextBox_MouseLeftButtonDown" GotFocus="MessageTextBox_GotFocus"/>
+        <Label x:Name="lblChat" Content="Chat" HorizontalAlignment="Left" Margin="31,132,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDisconnect" Content="Disconnect" HorizontalAlignment="Left" Margin="161,81,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="BtnDisconnect_Click"/>
+
+    </Grid>
+</Window>
