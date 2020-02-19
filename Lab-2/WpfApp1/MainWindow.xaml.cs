@@ -33,6 +33,8 @@ namespace WpfApp1
             connection.On<string, string>("GetMessage",
                 new Action<string, string>((username, message) =>
                 GetMessage(username, message)));
+            connection.On<string>("RemoveUserMessages", 
+                new Action<string>((username) => RemoveUserMessages(username)));
             
         }
 
@@ -44,6 +46,17 @@ namespace WpfApp1
                 MessageListBox.Items.Add(chat);
                 
             });
+        }
+
+        private void RemoveUserMessages(string username)
+        {
+            for (var i = 0; i < MessageListBox.Items.Count; i++)
+            {
+                if (MessageListBox.Items[i].ToString().Contains(username))
+                {
+                    MessageListBox.Items.RemoveAt(i);
+                }
+            }
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)

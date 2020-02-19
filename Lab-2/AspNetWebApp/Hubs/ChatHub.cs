@@ -14,5 +14,10 @@ namespace AspNetWebApp.Hubs
             await Clients.All.SendAsync("GetMessage", username, message);
         }
 
+        public async Task RemoveUserMessages(string username)
+        {
+            await Clients.All.SendAsync("RemoveUserMessages", username);
+        }
+
     }
 }
