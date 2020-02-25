@@ -28,7 +28,8 @@ namespace MyAwesomeProject.Migrations
                 name: "people",
                 columns: table => new
                 {
-                    PersonID = table.Column<string>(nullable: false),
+                    PersonID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     First_Name = table.Column<string>(nullable: true),
                     Middle_Name = table.Column<string>(nullable: true),
                     Last_Name = table.Column<string>(nullable: true),

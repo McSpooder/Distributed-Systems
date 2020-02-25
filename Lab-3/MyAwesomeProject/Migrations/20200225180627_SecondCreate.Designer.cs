@@ -10,8 +10,8 @@ using MyAwesomeProject;
 namespace MyAwesomeProject.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20200225172758_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20200225180627_SecondCreate")]
+    partial class SecondCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,6 +34,9 @@ namespace MyAwesomeProject.Migrations
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("County")
                         .HasColumnType("nvarchar(max)");
 
@@ -50,8 +53,10 @@ namespace MyAwesomeProject.Migrations
 
             modelBuilder.Entity("MyAwesomeProject.Person", b =>
                 {
-                    b.Property<string>("PersonID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("PersonID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("AddressIdentifier")
                         .HasColumnType("int");

@@ -14,6 +14,7 @@ namespace MyAwesomeProject
         public string City { get; set; }
         public string Post_Code { get; set; }
         public string County { get; set; }
+        public string Country { get; set; }
         public ICollection<Person> People { get; set; }
 
         public Address() { }
