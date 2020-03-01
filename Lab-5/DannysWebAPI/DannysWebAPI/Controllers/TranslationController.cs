@@ -19,11 +19,18 @@ namespace DannysWebAPI.Controllers
         }
 
         // GET: api/Translation/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id:int}", Name = "GetInt")]
         public string Get(int id)
         {
             string result = string.Format("Your value plus 100 is: {0}", (100 + id).ToString());
             return result;
+        }
+
+        // GET: api/Translation/value
+        [HttpGet("{inStr}", Name = "GetString")]
+        public string Get(string inStr)
+        {
+            return "You have sent in: " + inStr;
         }
 
         // POST: api/Translation
