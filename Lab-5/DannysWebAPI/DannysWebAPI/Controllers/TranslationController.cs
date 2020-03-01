@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DannysWebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class TranslationController : ControllerBase
     {
@@ -28,9 +28,16 @@ namespace DannysWebAPI.Controllers
 
         // GET: api/Translation/value
         [HttpGet("{inStr}", Name = "GetString")]
-        public string Get(string inStr)
+        public string GetString(string inStr)
         {
             return "You have sent in: " + inStr;
+        }
+
+        // GET: api/Translation/value
+        [HttpGet("{inStr}", Name = "GetName")]
+        public string GetName(string inStr)
+        {
+            return "Your name is: " + inStr;
         }
 
         // POST: api/Translation
