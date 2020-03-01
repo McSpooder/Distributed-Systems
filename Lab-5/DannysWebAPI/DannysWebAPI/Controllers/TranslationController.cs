@@ -40,6 +40,13 @@ namespace DannysWebAPI.Controllers
             return "Your name is: " + inStr;
         }
 
+        // GET: api/Translation/value
+        [HttpGet]
+        public string GetNameWithQ([FromQuery]string inStr)
+        {
+            return "Your name is: " + inStr;
+        }
+
         // POST: api/Translation
         [HttpPost]
         public void Post([FromBody] string value)
