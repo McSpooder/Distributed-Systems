@@ -1,0 +1,25 @@
+﻿div>
+@if (User.Identity.IsAuthenticated)
+{
+    <h4>Welcome @User.Identity.Name</h4>
+}
+else
+{
+    <h4>You are not logged in!</h4>
+}
+</div>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <a asp-action="Login" asp-controller="Signin" class="btn btn-default">Log In</a>
+    </div>
+</div>
+
+
