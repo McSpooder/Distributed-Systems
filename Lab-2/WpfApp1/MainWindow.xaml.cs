@@ -28,14 +28,16 @@ namespace WpfApp1
             InitializeComponent();
             MessageTextBox.IsEnabled = false;
             btnSend.IsEnabled = false;
-            //connection = new HubConnectionBuilder().WithUrl("http://150.237.201.206:5000/ChatHub").Build();
+            //connection = new HubConnectionBuilder().WithUrl("http://150.237.201.206:5000/ChatHub").Build(); //uses kestrel instead of iisexpress
             connection = new HubConnectionBuilder().WithUrl("http://localhost:51259/ChatHub").Build();
             connection.On<string, string>("GetMessage",
                 new Action<string, string>((username, message) =>
                 GetMessage(username, message)));
-            connection.On<string>("RemoveUserMessages", 
+            connection.On<string>("UserDisconnected",
+                new Action<string>((username) => UserDisconnected(username)));
+            connection.On<string>("RemoveUserMessages",
                 new Action<string>((username) => RemoveUserMessages(username)));
-            
+
         }
 
         private void GetMessage(string username, string message)
@@ -45,6 +47,15 @@ namespace WpfApp1
                 var chat = $"{username}: {message}";
                 MessageListBox.Items.Add(chat);
                 
+            });
+        }
+
+        private void UserDisconnected(string username)
+        {
+            this.Dispatcher.Invoke(() =>
+            {
+                var chat = $"{username}: disconnected from the chat :(";
+                MessageListBox.Items.Add(chat);
             });
         }
 
@@ -90,14 +101,18 @@ namespace WpfApp1
             }
         }
 
-        private void BtnDisconnect_Click(object sender, RoutedEventArgs e)
+        private async void BtnDisconnect_Click(object sender, RoutedEventArgs e)
         {
+            await connection.InvokeAsync("BroadcastDisconnect", UsernameTextBox.Text);
+
             btnDisconnect.IsEnabled = false;
             btnConnect.IsEnabled = true;
-            connection.StopAsync();
             UsernameTextBox.IsEnabled = true;
             MessageTextBox.IsEnabled = false;
             btnSend.IsEnabled = false;
+
+            await connection.StopAsync();
+
         }
 
         private void MessageTextBox_MouseDown(object sender, MouseButtonEventArgs e)
