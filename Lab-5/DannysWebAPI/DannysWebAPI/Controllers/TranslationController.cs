@@ -11,6 +11,14 @@ namespace DannysWebAPI.Controllers
     [ApiController]
     public class TranslationController : ControllerBase
     {
+
+        public class HttpResponseException : Exception
+        {
+            public int Status { get; set; } = 500;
+
+            public object Value { get; set; }
+        }
+
         // GET: api/Translation
         [HttpGet]
         public IEnumerable<string> Get()
@@ -25,6 +33,7 @@ namespace DannysWebAPI.Controllers
             string result = string.Format("Your value plus 100 is: {0}", (100 + id).ToString());
             return result;
         }
+
 
         // GET: api/Translation/value
         [HttpGet("{inStr}", Name = "GetString")]
