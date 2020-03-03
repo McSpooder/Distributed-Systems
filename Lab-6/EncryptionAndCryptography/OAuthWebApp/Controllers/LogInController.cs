@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authentication;
 
 namespace OAuthWebApp.Controllers
 {
-    public class LogInController : Controller
+    public class SignInController : Controller
     {
         public IActionResult Index()
         {
